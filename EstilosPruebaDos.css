@@ -65,6 +65,13 @@ table {
 .titulo {
   margin: 10px;
 }
+/*intro*/
+.intro {
+  padding: 15px;
+  background-color: rgba(232, 232, 232, 1.00);
+  text-align: justify;
+}
+/*articulo*/
 h1 {
   color: rgba(242, 242, 242, 1.00);
   font-family: mr-eaves-sans, sans-serif;
@@ -74,11 +81,6 @@ p {
 	color: rgba(28,88,166,1.00);
     font-family: nimbus-sans, sans-serif;
     font-size: 13px;
-}
-.intro {
-  padding: 15px;
-  background-color: rgba(232, 232, 232, 1.00);
-  text-align: justify;
 }
 .informaciongeneral {
   display: flex;
@@ -122,14 +124,24 @@ ul {
   margin-left: 10px;
 }
 li {
+  display: flex;
+  flex-direction: column;
   margin: 10px;
   list-style: circle;
   color: rgba(28, 88, 166, 1.00);
   list-style-position: outside;
   text-align: justify;
 }
+.mapa {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: auto;
+}
 /*Estilos por tamaño*/
 @media (max-width: 360px) {
+  /*Cabecera*/
   .cabecera {
     flex-direction: column;
     text-align: center;
@@ -141,6 +153,7 @@ li {
   .titulo {
     margin-top: 5px
   }
+  /*articulo*/
   .informaciongeneral {
     display: flex;
     flex-wrap: wrap;
@@ -160,7 +173,3 @@ li {
   }
 }
 @media (min-width: 768px) {}
-.sedes {
-}
-.sedenegrita {
-}
