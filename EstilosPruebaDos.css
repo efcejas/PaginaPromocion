@@ -71,6 +71,12 @@ table {
   background-color: rgba(232, 232, 232, 1.00);
   text-align: justify;
 }
+.barradenavegacion ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0px;
+}
 /*articulo*/
 h1 {
   color: rgba(242, 242, 242, 1.00);
@@ -80,7 +86,7 @@ h1 {
 p {
 	color: rgba(28,88,166,1.00);
     font-family: nimbus-sans, sans-serif;
-    font-size: 13px;
+    font-size: 17px;
 }
 .informaciongeneral {
   display: flex;
@@ -100,6 +106,7 @@ p {
 }
 .contenedor h2 {
   font-family: nimbus-sans, sans-serif;
+  font-size: 20px;
   font-weight: 700;
   font-style: normal;
   padding-left: 10px;
