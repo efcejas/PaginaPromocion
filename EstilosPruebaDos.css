@@ -212,6 +212,12 @@ p {
   box-shadow: 1px 1px 7px -3px;
 }
 
+.centros {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
 .contenedor p {
   color: rgba(28, 88, 166, 1.00)
 }
@@ -240,6 +246,13 @@ p {
   margin-left: 0px;
 }
 
+.centros {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 5px;
+}
+
 ul {
   display: flex;
   flex-direction: column;
@@ -248,7 +261,7 @@ ul {
 
 li {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 10px;
   list-style: circle;
   color: rgba(28, 88, 166, 1.00);
@@ -260,9 +273,16 @@ li {
   font-weight: 700;
 }
 
+.subtituloquienessomos {
+  text-align: justify;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 .mapa {
-  margin-top: 0px;
-  margin-left: 15px;
+  margin-top: 10px;
+  margin-left: auto;
   margin-right: auto;
   width: auto;
   height: auto;
@@ -309,15 +329,12 @@ li {
     flex-direction: column;
   }
 
-  .mapa {
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    height: auto;
+  .centros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
   }
 
-  /*articulo*/
   .informaciongeneral {
     display: flex;
     flex-wrap: wrap;
