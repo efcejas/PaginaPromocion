@@ -288,6 +288,27 @@ li {
   height: auto;
 }
 
+.contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 15px;
+  text-align: center;
+}
+
+.tarjeta {
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  padding: 10px;
+  margin: 10px;
+  -webkit-box-shadow: 1px 1px 7px -3px;
+  box-shadow: 1px 1px 7px -3px;
+}
+
+.tarjeta p {
+  font-size: 10px;
+  margin-top: 10px;
+}
+
 .contacto {
   color: rgba(26, 76, 156, 1.00);
   font-family: nimbus-sans, sans-serif;
@@ -331,7 +352,6 @@ li {
 
   .centros {
     display: grid;
-    grid-template-columns: 1fr;
     grid-gap: 5px;
   }
 
